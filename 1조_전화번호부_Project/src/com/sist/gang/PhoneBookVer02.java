@@ -25,6 +25,8 @@ class PhoneInfo2
 		System.out.println("phoneNumber: "+phoneNumber);
 		if(birth!=null)
 		System.out.println("birth:" +birth);
+		else
+			System.out.println("birth:"+null);
 	}
 }
 public class PhoneBookVer02 {
