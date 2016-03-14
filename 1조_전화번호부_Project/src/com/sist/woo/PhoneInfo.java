@@ -179,7 +179,7 @@ class PhoneBookManager
 	{
 		System.out.println("데이터 입력을 시작합니다..");
 		System.out.println("1. 일반, 2. 대학, 3. 회사");
-		System.out.print("선택>>");
+		System.out.print("선택>> ");
 		int choice=MenuViewer.scan.nextInt();
 		MenuViewer.scan.nextLine();
 		PhoneInfo info=null;
@@ -209,7 +209,8 @@ class PhoneBookManager
 	
 	public String searchData(String name)
 	{
-		/*System.out.println("데이터 검색을 시작합니다..");
+		/*
+		System.out.println("데이터 검색을 시작합니다..");
 		
 		System.out.print("이름 : ");
 		String name=MenuViewer.scan.nextLine();*/
@@ -298,7 +299,7 @@ class PhoneBookManager
 				out.writeObject(itr.next());
 			
 			out.close();
-		}catch(IOException e)
+		}catch(Exception e)
 		{
 			e.printStackTrace();
 		}
@@ -414,12 +415,8 @@ class searchDelFrame extends JFrame
 	JButton delBtn=new JButton("DEL");
 	
 	JTextArea textArea=new JTextArea(20,25);
-	
-	public searchDelFrame(String string) {
-		// TODO 자동 생성된 생성자 스텁
-	}
 
-	public searchDelFrame()
+	public searchDelFrame(String string)
 	{
 		//super(title);
 		setBounds(100,200,330,450);
