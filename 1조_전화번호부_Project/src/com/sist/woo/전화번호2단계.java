@@ -11,15 +11,12 @@ class phoneInfo2
 		// TODO 자동 생성된 생성자 스텁
 		this.name=name;
 		this.phone=phone;
+		if(birth==null)
 		this.birth=null;
+		else
+			this.birth=birth;
 	}
 
-	public void phoneInfo2(String name, String phone,String birth)
-	{
-		this.name=name;
-		this.phone=phone;
-		this.birth=birth;
-	}
 	public void printInfo()
 	{
 		System.out.println("입력된 정보 출력 ");
